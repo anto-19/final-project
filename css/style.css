@@ -1,0 +1,343 @@
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+.active {
+   color: white !important;
+   font-weight: 600;
+   background-color: rgba(0, 0, 0, 0.671) !important;
+}
+
+.logo {
+   background-color: rgba(70, 63, 63, 0.418);
+   height: 75px;
+   line-height: 75px;
+   position: fixed;
+   top: 0;
+}
+.icons {
+   letter-spacing: 6px;
+   line-height: 100px;
+   display: inline-block;
+   margin-left: 0px;
+   font-size: 35px;
+   position: absolute;
+   right: 30px;
+}
+.icons a:first-child {
+   color: rgb(33, 189, 33) !important;
+}
+.icons > a > i:hover {
+   font-size: 30;
+   transition: 0.5s;
+   color: black;
+}
+.page {
+   border: 0;
+   padding: 0;
+   margin: 0;
+   height: 100vh;
+   width: 100vw !important;
+}
+.logo > img {
+   line-height: 75px;
+}
+.carousel-item img {
+   height: 100vh;
+}
+.navbar {
+   text-align: center;
+   color: white !important;
+   height: 45px;
+   position: fixed;
+   top: 75px;
+}
+.navbar > ul {
+   width: 100%;
+   position: fixed;
+}
+.navbar > ul > li {
+   margin: 0px auto;
+}
+a {
+   color: white !important;
+}
+.dropdown-menu {
+   text-align: left !important;
+}
+
+ul > li > a:hover,
+.dropdown-menu a:hover {
+   background-color: rgba(70, 63, 63, 0.7);
+}
+.navar-top {
+   background-color: rgba(70, 63, 63, 0.418) !important;
+   width: 70vw;
+   margin-left: 15vw;
+   z-index: 99;
+}
+.navbar-expand-lg .navbar-nav {
+   width: 69vw;
+}
+.navbar-nav .nav-link {
+   padding: 5px;
+}
+.dropdown-menu {
+   background-color: rgba(70, 63, 63, 1) !important;
+   border: 0px;
+   text-align: center;
+}
+.footer {
+   background-color: rgba(70, 63, 63, 0.7);
+   width: 100vw;
+   position: fixed;
+   bottom: 0px;
+   color: white;
+   text-align: center;
+}
+
+.card-body {
+   width: 100%;
+   height: 100%;
+   background-color: transparent;
+   color: white;
+   font-size: 22px;
+}
+.card_container,
+.card_container_location {
+   width: 55vw;
+   position: fixed;
+   top: 30%;
+   right: 0;
+   background-color: transparent;
+}
+.location-menu {
+   width: 100%;
+   position: static;
+   margin-top: -75vh;
+}
+
+.card {
+   background-color: rgba(70, 63, 63, 0.7);
+}
+.modal-body,
+.modal-title {
+   color: black;
+}
+.btn-primary {
+   background-color: transparent !important;
+   border: 0px solid transparent !important;
+}
+.btn-primary:hover {
+   background-color: rgba(70, 63, 63, 1) !important;
+}
+
+section {
+   height: auto;
+   width: 100%;
+   background-color: transparent !important;
+   position: fixed;
+   top: 150px;
+   align-items: center;
+}
+.container-form {
+   width: 100%;
+   max-width: 50vw;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: rgba(70, 63, 63, 0.9) !important;
+   border-radius: 8px;
+   margin-bottom: 20px;
+   z-index: 99;
+}
+p {
+   margin-bottom: 0rem;
+}
+.form-group {
+   width: 100%;
+   margin-top: 20px;
+   font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+   width: 100%;
+   padding: 5px;
+   font-size: 18px;
+   border: 2px solid rgba(255, 255, 255, 0.719) !important;
+   margin-top: 5px;
+   background-color: transparent;
+   color: white;
+   border-radius: 20px;
+}
+
+textarea {
+   resize: vertical;
+}
+button[type='submit'] {
+   width: 100%;
+   border: none;
+   outline: none;
+   padding: 2px;
+   font-size: 24px;
+   border-radius: 8px;
+   font-family: 'Montserrat';
+   color: black;
+   text-align: center;
+   cursor: pointer;
+   margin-top: 10px;
+   transition: 0.3s ease background-color;
+}
+button[type='submit']:hover {
+   background-color: rgb(214, 226, 236);
+}
+#status {
+   width: 90%;
+   max-width: 500px;
+   text-align: center;
+   padding: 10px;
+   margin: 0 auto;
+   border-radius: 8px;
+}
+#status.success {
+   background-color: rgb(211, 250, 153);
+   animation: status 4s ease forwards;
+}
+#status.error {
+   background-color: rgb(250, 129, 92);
+   color: white;
+   animation: status 4s ease forwards;
+}
+label {
+   color: white;
+}
+@keyframes status {
+   0% {
+      opacity: 1;
+      pointer-events: all;
+   }
+   90% {
+      opacity: 1;
+      pointer-events: all;
+   }
+   100% {
+      opacity: 0;
+      pointer-events: none;
+   }
+}
+/* media  */
+@media screen and (max-width: 1350px) {
+   .card_container {
+      width: 100%;
+      position: static;
+      margin-top: -75vh;
+   }
+   .card_container_location {
+      width: 100%;
+      position: static;
+      margin-top: -75vh;
+   }
+}
+
+@media screen and (max-width: 989px) {
+   .card {
+      width: 100vw;
+      position: fixed;
+      left: calc(50% - 50vw);
+   }
+   #bg {
+      width: auto !important;
+   }
+   .navbar-expand-lg .navbar-nav .dropdown-menu {
+      background-color: transparent !important;
+      text-align: center !important;
+   }
+
+   .navbar-light .navbar-toggler {
+      color: transparent !important;
+      border-color: transparent;
+   }
+   .navbar-light .navbar-toggler {
+      color: transparent !important;
+      border-color: transparent !important;
+   }
+   .navbar-expand-lg .navbar-nav {
+      width: 100%;
+   }
+   .icons {
+      line-height: 75px;
+   }
+   .navbar > ul {
+      top: 75px;
+      left: 0;
+      background-color: rgba(70, 63, 63, 0.7);
+   }
+   .navbar {
+      top: 15px;
+      z-index: 9;
+   }
+   .navbar-toggler-icon {
+      width: 40px;
+   }
+   .navbar-light .navbar-toggler {
+      color: rgb(0, 0, 0);
+      border-color: transparent;
+   }
+   .dropdown-menu {
+      background-color: transparent !important;
+   }
+   .navar-top {
+      background-color: transparent !important;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   .container-form {
+      max-width: 100%;
+      height: 30vh;
+   }
+   #status {
+      width: 100%;
+      max-width: 500px;
+      padding: 4px;
+   }
+   section {
+      top: 110px;
+   }
+   .card_container {
+      display: none;
+   }
+   .icons {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 25vh;
+   }
+   .icons a {
+      height: 50px;
+      color: black;
+   }
+
+   .icons a i {
+      font-weight: 400;
+   }
+   ul .navbar {
+      width: 100%;
+   }
+   .logo img {
+      width: inherit;
+      max-width: 260px;
+      max-height: 80px;
+   }
+   .navbar {
+      top: 15px;
+   }
+   .navar-top {
+      background-color: transparent !important;
+   }
+   .navbar-toggler-icon {
+      width: 25px;
+      margin-left: -30vw;
+   }
+}
